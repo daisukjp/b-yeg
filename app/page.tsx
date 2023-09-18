@@ -12,7 +12,11 @@ export default function Home() {
   return (
     <main className="">
       <Header />
-      <div>{postPreviews}</div>
+      <div>
+        <main className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ring-offset-primary ">
+          {postPreviews}
+        </main>
+      </div>
     </main>
   );
 }

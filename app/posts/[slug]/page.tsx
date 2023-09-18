@@ -26,10 +26,18 @@ export default function PostPage(props: any) {
   return (
     <>
       <Header />
-      <main className="">
+      <main
+        className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ring-offset-primary"
+        style={{
+          fontFamily:
+            "ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",
+        }}
+      >
         <div>
-          <h1 style={{ fontSize: "32px" }}>{post.data.title}</h1>
-          <p>{post.data.date}</p>
+          <p style={{ color: "#6f6f6f" }}>{post.data.date}</p>
+          <h1 className="text-primary text-3xl font-bold tracking-tight leading-tight">
+            {post.data.title}
+          </h1>
           <Markdown>{post.content}</Markdown>
         </div>
       </main>

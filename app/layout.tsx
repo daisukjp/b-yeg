@@ -18,7 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <Header /> */}
-      <body className={inter.className}>{children}</body>
+      <body
+        className={inter.className}
+        style={{ backgroundColor: "hsl(0, 0%, 98%)" }}
+      >
+        {children}
+      </body>
     </html>
   );
 }
