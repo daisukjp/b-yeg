@@ -1,17 +1,18 @@
+import Link from "next/link";
 import Header from "./header";
-import fs from "fs";
-
-const getPostMetaData = () => {
-  const folder = "posts/";
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) => file.endsWith(".md"));
-  const slugs = markdownPosts.map((file) => file.replace(".md", ""));
-};
+import getPostMetaData from "@/components/getPostMetaData";
+import PostPreview from "@/components/PostPreview";
 
 export default function Home() {
+  const postMetaData = getPostMetaData();
+  const postPreviews = postMetaData.map((post) => (
+    <PostPreview key={post.slug} {...post} />
+  ));
+
   return (
     <main className="">
       <Header />
+      <div>{postPreviews}</div>
     </main>
   );
 }
