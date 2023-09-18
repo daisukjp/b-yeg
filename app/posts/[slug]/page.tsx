@@ -19,6 +19,32 @@ export const generateStaticParams = async () => {
   });
 };
 
+const StyledImage: React.FC<{ src: string; alt?: string }> = ({ src, alt }) => (
+  <div style={{ width: "100%", marginTop: "2rem", marginBottom: "2rem" }}>
+    <figure
+      style={{
+        gap: "0.5rem",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <img
+        src={src}
+        alt={alt}
+        style={{
+          borderRadius: "10px",
+          border: "0.1px solid #e5e7eb",
+          backgroundColor: "#f3f3f3",
+          color: "transparent",
+          maxWidth: "none",
+        }}
+        width="1000"
+        height="800"
+      />
+    </figure>
+  </div>
+);
+
 export default function PostPage(props: any) {
   const slug = props.params.slug;
   const post = getPostContent(slug);
@@ -38,7 +64,17 @@ export default function PostPage(props: any) {
           <h1 className="text-primary text-3xl font-bold tracking-tight leading-tight">
             {post.data.title}
           </h1>
-          <Markdown>{post.content}</Markdown>
+          <Markdown
+            options={{
+              overrides: {
+                img: {
+                  component: StyledImage,
+                },
+              },
+            }}
+          >
+            {post.content}
+          </Markdown>
         </div>
       </main>
     </>
