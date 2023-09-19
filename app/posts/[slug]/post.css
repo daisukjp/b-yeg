@@ -1,0 +1,17 @@
+.styledh2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #171717;
+  margin-top: 2em;
+}
+
+.StyledP {
+  color: #171717;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .styledh2 {
+    font-size: 24px;
+  }
+}

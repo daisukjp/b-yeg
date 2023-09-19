@@ -1,3 +1,4 @@
+import "./post.css";
 import Header from "@/app/header";
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
@@ -40,10 +41,19 @@ const StyledImage: React.FC<{ src: string; alt?: string }> = ({ src, alt }) => (
         }}
         width="1000"
         height="800"
+        className="w-[calc(100%+48px)] -ml-6 lg:w-[calc(100%+128px)] lg:-ml-16 md:rounded-lg max-w-none animate-in"
       />
     </figure>
   </div>
 );
+
+const StyledH2 = ({ children }) => (
+  <h2 className=" text-xl leading-8 mb-4 md:text-xl md:leading-8 styledh2">
+    {children}
+  </h2>
+);
+
+const StyledP = ({ children }) => <p className="StyledP">{children}</p>;
 
 export default function PostPage(props: any) {
   const slug = props.params.slug;
@@ -61,7 +71,7 @@ export default function PostPage(props: any) {
       >
         <div>
           <p style={{ color: "#6f6f6f" }}>{post.data.date}</p>
-          <h1 className="text-primary text-3xl font-bold tracking-tight leading-tight">
+          <h1 className="text-primary text-3xl font-medium tracking-tight leading-tight">
             {post.data.title}
           </h1>
           <Markdown
@@ -69,6 +79,12 @@ export default function PostPage(props: any) {
               overrides: {
                 img: {
                   component: StyledImage,
+                },
+                h2: {
+                  component: StyledH2,
+                },
+                p: {
+                  component: StyledP,
                 },
               },
             }}
