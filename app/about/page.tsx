@@ -7,19 +7,19 @@ import { Reveal } from "react-awesome-reveal";
 import { keyframes, Keyframes } from "@emotion/react";
 import XLOGO from "../images/xLogo.png";
 
-export default function About() {
-  const fadeInUp: Keyframes = keyframes`
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(40px);
-        transform: translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }`;
+const fadeInUp: Keyframes = keyframes`
+0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}`;
 
+export default function About() {
   return (
     <>
       <Header />

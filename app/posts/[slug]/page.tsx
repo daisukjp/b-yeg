@@ -3,8 +3,8 @@ import Header from "@/app/header";
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-import { Reveal } from "react-awesome-reveal";
-import { keyframes, Keyframes } from "@emotion/react";
+// import { Reveal } from "react-awesome-reveal";
+// import { keyframes, Keyframes } from "@emotion/react";
 import getPostMetaData from "@/components/getPostMetaData";
 
 const getPostContent = (slug: string) => {
