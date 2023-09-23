@@ -1,11 +1,13 @@
 import "./post.css";
-import Header from "@/app/header";
+import path from "path";
 import fs from "fs";
-import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-// import { Reveal } from "react-awesome-reveal";
-// import { keyframes, Keyframes } from "@emotion/react";
+import Markdown from "markdown-to-jsx";
+import Header from "@/app/header";
 import getPostMetaData from "@/components/getPostMetaData";
+import StyledH2 from "@/app/StyledH2";
+import StyledP from "@/app/StyledP";
+import StyledImage from "@/app/StyledImage";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -22,41 +24,6 @@ export const generateStaticParams = async () => {
   });
 };
 
-const StyledImage: React.FC<{ src: string; alt?: string }> = ({ src, alt }) => (
-  <div style={{ width: "100%", marginTop: "2rem", marginBottom: "2rem" }}>
-    <figure
-      style={{
-        gap: "0.5rem",
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
-      <img
-        src={src}
-        alt={alt}
-        style={{
-          borderRadius: "10px",
-          border: "0.1px solid #e5e7eb",
-          backgroundColor: "#f3f3f3",
-          color: "transparent",
-          maxWidth: "none",
-        }}
-        width="1000"
-        height="800"
-        className="w-[calc(100%+48px)] -ml-6 lg:w-[calc(100%+128px)] lg:-ml-16 md:rounded-lg max-w-none animate-in"
-      />
-    </figure>
-  </div>
-);
-
-const StyledH2 = ({ children }) => (
-  <h2 className=" text-xl leading-8 mb-4 md:text-xl md:leading-8 styledh2">
-    {children}
-  </h2>
-);
-
-const StyledP = ({ children }) => <p className="StyledP">{children}</p>;
-
 export default function PostPage(props: any) {
   const slug = props.params.slug;
   const post = getPostContent(slug);
@@ -65,7 +32,7 @@ export default function PostPage(props: any) {
     <>
       <Header />
       <main
-        className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ring-offset-primary"
+        className="px-6 md:px-6 pt-4 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ring-offset-primary"
         style={{
           fontFamily:
             "ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",

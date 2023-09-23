@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { PostMetaData } from "./postMetaData";
+import { PostMetaData } from "./PostMetaData";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes, Keyframes } from "@emotion/react";
 

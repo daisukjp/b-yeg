@@ -25,3 +25,22 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.bg-secondaryA {
+  background-color: #00000012;
+}
+
+/* Chrome, Edge, Safari 対応 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox 対応 */
+body {
+  scrollbar-width: none;
+}
+
+/* IE 対応 */
+body {
+  -ms-overflow-style: none;
+}

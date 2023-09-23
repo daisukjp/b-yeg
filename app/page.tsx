@@ -1,5 +1,4 @@
 import "./globals.css";
-import Link from "next/link";
 import Header from "./header";
 import getPostMetaData from "@/components/getPostMetaData";
 import PostPreview from "@/components/PostPreview";
