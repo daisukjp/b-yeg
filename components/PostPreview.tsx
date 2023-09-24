@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { PostMetaData } from "./PostMetaData";
 import { Reveal } from "react-awesome-reveal";
@@ -31,6 +32,14 @@ const PostPreview = (props: PostMetaData) => {
           <Link href={`/posts/${props.slug}`}>
             <h2>{props.title}</h2>
           </Link>
+          {props.imageURL && (
+            <Image
+              src={props.imageURL}
+              alt={props.title}
+              width={500}
+              height={300}
+            />
+          )}
           <p>{props.subtitle}</p>
           <p>{props.date}</p>
         </Reveal>
