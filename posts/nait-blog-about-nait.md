@@ -6,7 +6,7 @@ cr: ["https://www.daisukjp.com/"]
 imageURL: "/images/nait-title.webp"
 ---
 
-Northern Alberta Institute of Technology (NAIT)は私が通っていたカナダの教育機関で、エドモントンではよく知られていると思います。また、カルガリーには姉妹校的な感じで southern alberta institute of technology (SAIT)もあります。
+Northern Alberta Institute of Technology (NAIT)は私が通っていたカナダの教育機関で、エドモントンではよく知られていると思います。また、カルガリーには姉妹校的な感じで Southern Alberta Institute of Technology (SAIT)もあります。
 
 ![images/nait cat building](/images/nait-title.webp)
 
@@ -91,13 +91,13 @@ Web 開発やデザインについて 1 から学ぶことができるので開�
 
 IELTS,TOEFUL iBT, CLB や Duolingo など多くの選択肢があります。
 
-![images/nat english proficiency](/images/nait-english-list.web)
+![images/nat english proficiency](/images/nait-english-list.webp)
 
 ## <span id="nait-tuition">学費</span>
 
 プログラムによって学費は変わってくるので、参考までに自分が受けていたプログラムの学費を記載します。
 
-![images/nat tuition](/images/nait-tuition.web)
+![images/nat tuition](/images/nait-tuition.webp)
 合計$40,435.52 (400 万超えです。)
 自分は日本にいた頃にインターンやカナダに来てからバイトもしてある程度は稼げましたが、母親に借金をして学費を払いました。（ありがとう）
 
@@ -105,7 +105,7 @@ IELTS,TOEFUL iBT, CLB や Duolingo など多くの選択肢があります。
 
 奨学金はプログラムによって変わってくるのですが自分の最終セミスターのリストを記載します。払っている学費からしたら少ない額ではありますが、小論文的なものを書いて提出していたらもらえました。
 
-![images/nat tuition](/images/nait-scholarships.png)
+![images/nat tuition](/images/nait-scholarships.webp)
 
 ## <span id="nait-pgwp">PGWP は取得できるか?</span>
 

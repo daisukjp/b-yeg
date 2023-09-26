@@ -1,5 +1,6 @@
 "use client";
 
+import "./postPreview.css";
 import Image from "next/image";
 import Link from "next/link";
 import { PostMetaData } from "./PostMetaData";
@@ -30,19 +31,37 @@ const PostPreview = (props: PostMetaData) => {
           duration={600}
           triggerOnce
         >
-          <Link href={`/posts/${props.slug}`}>
-            <h2>{props.title}</h2>
-          </Link>
-          {props.imageURL && (
-            <Image
-              src={props.imageURL}
-              alt={props.title}
-              width={500}
-              height={300}
-            />
-          )}
-          <p>{props.subtitle}</p>
-          <p>{props.date}</p>
+          <ul className="animate-in flex flex-col animated-list">
+            <li className="py-6 flex flex-col md:flex-row gap-4 md:gap-6 transition-opacity first:pt-0 ">
+              <Link
+                href={`/posts/${props.slug}`}
+                className="w-full md:w-2/5 aspect-video bg-secondary rounded-lg border border-primary overflow-clip select-none"
+              >
+                {props.imageURL && (
+                  <Image
+                    src={props.imageURL}
+                    alt={props.title}
+                    width={500}
+                    height={300}
+                    style={{
+                      // position: "absolute",
+                      height: "100%",
+                      width: "100%",
+                      inset: "0px",
+                      objectFit: "cover",
+                      color: "transparent",
+                    }}
+                    className=" w-full h-full "
+                  />
+                )}
+              </Link>
+              <div>
+                <p style={{ color: "#6f6f6f" }}>{props.date}</p>
+                <h2>{props.title}</h2>
+                <p>{props.subtitle}</p>
+              </div>
+            </li>
+          </ul>
         </Reveal>
       </div>
     </>
