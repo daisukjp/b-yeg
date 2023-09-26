@@ -23,7 +23,7 @@ const PostPreview = (props: PostMetaData) => {
   // console.log(props.slug);
   return (
     <>
-      <div>
+      <div className="flex flex-col gap-12 md:gap-24">
         <Reveal
           className="onStep"
           keyframes={fadeInUp}
@@ -31,6 +31,19 @@ const PostPreview = (props: PostMetaData) => {
           duration={600}
           triggerOnce
         >
+          <div className="flex flex-col gap-8">
+            <div>
+              <h1 className="animate-in text-3xl font-bold tracking-tight">
+                Blogs
+              </h1>
+              <p
+                className="text-secondary animate-in"
+                style={{ color: "#6f6f6f" }}
+              >
+                More blogs up coming soon....
+              </p>
+            </div>
+          </div>
           <ul className="animate-in flex flex-col animated-list">
             <li className="py-6 flex flex-col md:flex-row gap-4 md:gap-6 transition-opacity first:pt-0 ">
               <Link

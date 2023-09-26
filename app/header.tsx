@@ -51,7 +51,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`relative md:sticky top-0 z-20 main-header bg-primary ${
+        className={`relative sticky top-0 z-20 main-header bg-primary ${
           isScrolled ? "scroll-header" : ""
         }`}
         style={{
