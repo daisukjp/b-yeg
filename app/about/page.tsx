@@ -22,7 +22,7 @@ export default function About() {
   return (
     <>
       <Header />
-      <main className="px-6 md:px-6 pt-4 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ring-offset-primary">
+      <main className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ring-offset-primary">
         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
           <Reveal
             className="onStep"
@@ -32,7 +32,7 @@ export default function About() {
             triggerOnce
           >
             <div style={{ gap: "2rem" }}>
-              <h1 className="animate-in text-3xl font-medium tracking-tight">
+              <h1 className="animate-in text-3xl font-bold tracking-tight">
                 About
               </h1>
             </div>
