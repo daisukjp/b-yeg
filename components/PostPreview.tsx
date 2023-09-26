@@ -40,7 +40,7 @@ const PostPreview = (props: PostMetaData) => {
                 className="text-secondary animate-in"
                 style={{ color: "#6f6f6f" }}
               >
-                More blogs up coming soon....
+                More blogs coming soon....
               </p>
             </div>
           </div>
