@@ -19,6 +19,7 @@ const fadeInUp: Keyframes = keyframes`
 }`;
 
 const PostPreview = (props: PostMetaData) => {
+  // console.log(props.slug);
   return (
     <>
       <div>

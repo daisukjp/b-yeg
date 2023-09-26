@@ -1,14 +1,14 @@
 ---
 title: "カナダの学校NAITについて"
-subtitle: "8-bit games are a great way to learn and expand your portfolio."
+subtitle: ""
 date: "2023-09-23"
 cr: ["https://www.daisukjp.com/"]
-imageURL: "/public/images/cat-exterior.jpeg"
+imageURL: "/images/nait-title.webp"
 ---
 
 Northern Alberta Institute of Technology (NAIT)は私が通っていたカナダの教育機関で、エドモントンではよく知られていると思います。また、カルガリーには姉妹校的な感じで southern alberta institute of technology (SAIT)もあります。
 
-![images/nait cat building](/images/cat-exterior.jpeg)
+![images/nait cat building](/images/nait-title.webp)
 
 **教育分野は多岐にわたっており、IT、エンジニアリング、ビジネス、健康科学などの幅広い分野での知識を身につけることができます。エドモントン周辺では知名度があるそうです、実際アルバータ大学を卒業した後に実践的なスキルを身につけるために NAIT に入学した方もいました。
 **
@@ -91,13 +91,13 @@ Web 開発やデザインについて 1 から学ぶことができるので開�
 
 IELTS,TOEFUL iBT, CLB や Duolingo など多くの選択肢があります。
 
-![images/nat english proficiency](/images/nait-english-list.png)
+![images/nat english proficiency](/images/nait-english-list.web)
 
 ## <span id="nait-tuition">学費</span>
 
 プログラムによって学費は変わってくるので、参考までに自分が受けていたプログラムの学費を記載します。
 
-![images/nat tuition](/images/nait-tuition.png)
+![images/nat tuition](/images/nait-tuition.web)
 合計$40,435.52 (400 万超えです。)
 自分は日本にいた頃にインターンやカナダに来てからバイトもしてある程度は稼げましたが、母親に借金をして学費を払いました。（ありがとう）
 

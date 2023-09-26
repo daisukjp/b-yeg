@@ -5,7 +5,6 @@ import "./about.css";
 import Header from "../header";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes, Keyframes } from "@emotion/react";
-import XLOGO from "../images/xLogo.png";
 
 const fadeInUp: Keyframes = keyframes`
 0% {
