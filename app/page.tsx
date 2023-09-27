@@ -5,6 +5,8 @@ import PostPreview from "@/components/PostPreview";
 
 export default function Home() {
   const postMetaData = getPostMetaData();
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
   const postPreviews = postMetaData.map((post) => (
     <PostPreview key={post.slug} {...post} />
   ));
