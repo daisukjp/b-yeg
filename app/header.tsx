@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { Popover, Transition } from "@headlessui/react";
-import DSLOGO from "./images/dsato-logo.png";
+import DSLOGO from "../public/images/dsato-logo.png";
 import NavLink from "./navLink";
 import clsx from "clsx";
 
