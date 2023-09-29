@@ -16,11 +16,14 @@ const getPostContent = (slug: string) => {
   return matterResult;
 };
 
-export const generateStaticParams = async () => {
+export const getStaticPaths = async () => {
   const posts = getPostMetaData();
-  return posts.map((post) => {
-    slug: post.slug;
-  });
+  return {
+    paths: posts.map((post) => ({
+      params: { slug: post.slug },
+    })),
+    fallback: false,
+  };
 };
 
 export default function PostPage(props: any) {
