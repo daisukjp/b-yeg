@@ -8,6 +8,8 @@ const StyledImage: React.FC<{ src: string; alt?: string }> = ({ src, alt }) => (
       backgroundColor: "#f3f3f3",
       color: "transparent",
       maxWidth: "none",
+      marginTop: "2rem",
+      marginBottom: "2rem",
     }}
     width="1000"
     height="800"
