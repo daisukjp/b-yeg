@@ -1,8 +1,8 @@
 import fs from "fs";
 import matter from "gray-matter";
-import { PostMetaData } from "./PostMetaData";
+import { PostMetadata } from "./PostMetaData";
 
-const getPostMetaData = (): PostMetaData[] => {
+const getPostMetaData = (): PostMetadata[] => {
   const folder = "posts/";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));

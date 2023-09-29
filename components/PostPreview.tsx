@@ -3,7 +3,7 @@
 import "./postPreview.css";
 import Image from "next/image";
 import Link from "next/link";
-import { PostMetaData } from "./PostMetaData";
+import { PostMetadata } from "./PostMetaData";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes, Keyframes } from "@emotion/react";
 
@@ -19,7 +19,7 @@ const fadeInUp: Keyframes = keyframes`
     transform: translateY(0);
 }`;
 
-const PostPreview = (props: PostMetaData) => {
+const PostPreview = (props: PostMetadata) => {
   // console.log(props.slug);
   return (
     <>
