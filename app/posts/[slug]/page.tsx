@@ -6,7 +6,7 @@ import Header from "@/app/header";
 import getPostMetadata from "@/components/getPostMetaData";
 import StyledH2 from "@/app/StyledH2";
 import StyledP from "@/app/StyledP";
-// import StyledImage from "@/app/StyledImage";
+import StyledImage from "@/app/StyledImage";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -45,9 +45,9 @@ export default function PostPage(props: any) {
           <Markdown
             options={{
               overrides: {
-                // img: {
-                //   component: StyledImage,
-                // },
+                img: {
+                  component: StyledImage,
+                },
                 h2: {
                   component: StyledH2,
                 },
