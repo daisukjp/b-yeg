@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Header from "@/app/header";
-import getPostMetaData from "@/components/getPostMetaData";
+import getPostMetadata from "@/components/getPostMetaData";
 import StyledH2 from "@/app/StyledH2";
 import StyledP from "@/app/StyledP";
 // import StyledImage from "@/app/StyledImage";
@@ -17,10 +17,10 @@ const getPostContent = (slug: string) => {
 };
 
 export const generateStaticParams = async () => {
-  const posts = getPostMetaData();
-  return posts.map((post) => {
-    slug: post.slug;
-  });
+  const posts = getPostMetadata();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 };
 
 export default function PostPage(props: any) {
