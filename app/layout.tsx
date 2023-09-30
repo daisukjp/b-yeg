@@ -4,10 +4,10 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "POPYEG",
-  description: "Blog web app by Daisuke Sato",
-};
+// export const metadata: Metadata = {
+//   title: "POPYEG",
+//   description: "Blog web app by Daisuke Sato",
+// };
 
 export default function RootLayout({
   children,
