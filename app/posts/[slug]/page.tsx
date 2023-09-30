@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Header from "@/app/header";
 import getPostMetadata from "@/components/getPostMetaData";
+import Head from "next/head";
 import StyledH2 from "@/app/StyledH2";
 import StyledP from "@/app/StyledP";
 import StyledImage from "@/app/StyledImage";
@@ -29,6 +30,12 @@ export default function PostPage(props: any) {
 
   return (
     <>
+      <Head>
+        <title>{post.data.title}</title>
+        <meta property="og:title" content={post.data.title} />
+        <meta property="og:description" content={post.data.subtitle} />
+        <meta property="og:image" content={post.data.imageURL} />
+      </Head>
       <Header />
       <main
         className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ring-offset-primary"
