@@ -6,7 +6,19 @@ cr: ["https://www.daisukjp.com/"]
 imageURL: "/images/nait-title.webp"
 ---
 
+<div class="flex flex-col gap-3 animate-in">
+<div class="blog-date">
+2023-09-30
+</div>
+
+<div class="text-primary text-3xl font-medium tracking-tight leading-tight">
+# カナダの学校NAITについて
+</div>
+
+<div class="secondP">
 Northern Alberta Institute of Technology (NAIT)は私が通っていたカナダの教育機関で、エドモントンではよく知られていると思います。また、カルガリーには姉妹校的な感じで Southern Alberta Institute of Technology (SAIT)もあります。
+</div>
+</div>
 
 ![images/nait cat building](/images/nait-title.webp)
 

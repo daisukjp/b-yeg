@@ -31,17 +31,13 @@ export default function PostPage(props: any) {
     <>
       <Header />
       <main
-        className="px-6 md:px-6 pt-4 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ring-offset-primary"
+        className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ring-offset-primary"
         style={{
           fontFamily:
             "ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",
         }}
       >
         <div>
-          <p style={{ color: "#6f6f6f" }}>{post.data.date}</p>
-          <h1 className="text-primary text-3xl font-medium tracking-tight leading-tight">
-            {post.data.title}
-          </h1>
           <Markdown
             options={{
               overrides: {

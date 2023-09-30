@@ -10,8 +10,21 @@
   font-weight: 400;
 }
 
+.secondP,
+.blog-date {
+  color: #6f6f6f;
+}
+
 @media screen and (min-width: 768px) {
   .styledh2 {
     font-size: 24px;
+  }
+
+  .StyledImage {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
   }
 }
