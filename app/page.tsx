@@ -5,14 +5,12 @@ import PostPreview from "@/components/PostPreview";
 
 export default function Home() {
   const postMetaData = getPostMetaData();
-  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
   const postPreviews = postMetaData.map((post) => (
     <PostPreview key={post.slug} {...post} />
   ));
 
   return (
-    <main className="">
+    <main>
       <Header />
       <div>
         <main className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ring-offset-primary ">
