@@ -1,3 +1,17 @@
+.blogListImage,
+.blogListItems {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .blogListImage {
+    width: 40%;
+  }
+
+  .blogListItems {
+    width: 60%;
+  }
+}
 @media (hover: hover) {
   .animated-list:hover li {
     opacity: 0.5;

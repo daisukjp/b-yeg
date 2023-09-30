@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import "./about.css";
 import Header from "../header";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes, Keyframes } from "@emotion/react";
+import ConnectLinks from "./ConnectLinks";
 
 const fadeInUp: Keyframes = keyframes`
 0% {
@@ -69,11 +69,22 @@ export default function About() {
                   <p>
                     自分が書きたいことやリクエストがあったことをブログにしていく予定です:)
                     リクエストは{" "}
-                    <a href="https://twitter.com/daisukjp" target="_blank">
-                      @daisukjp まで!
+                    <a
+                      href="https://twitter.com/daisukjp"
+                      target="_blank"
+                      className="xsns"
+                    >
+                      @daisukjp
                     </a>
+                    まで!
                   </p>
                 </div>
+              </section>
+              <section className="aboutBody-section">
+                <h2 className="aboutBody-h2">Contact</h2>
+                <ul className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-2 animated-list">
+                  <ConnectLinks />
+                </ul>
               </section>
             </Reveal>
           </div>

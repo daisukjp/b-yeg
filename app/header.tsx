@@ -61,7 +61,7 @@ const Header: React.FC = () => {
         }}
       >
         <nav className="px-4 md:px-6 py-3 lg max-w-[700px] mx-auto flex justify-between items-center gap-3">
-          <Link href="/">
+          <Link href="/" className="headerLogo">
             <Image src={DSLOGO} alt="DS logo" width={100} height={50} />
           </Link>
 

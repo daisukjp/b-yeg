@@ -44,6 +44,14 @@
   z-index: 1;
 }
 
+.xsns {
+  color: #6f6f6f;
+}
+
+.xsns:hover {
+  color: black;
+}
+
 @media screen and (min-width: 768px) {
   .aboutBody-top {
     gap: 6rem;

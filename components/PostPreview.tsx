@@ -48,7 +48,7 @@ const PostPreview = (props: PostMetadata) => {
             <li className="py-6 flex flex-col md:flex-row gap-4 md:gap-6 transition-opacity first:pt-0 ">
               <Link
                 href={`/posts/${props.slug}`}
-                className="w-full md:w-2/5 aspect-video bg-secondary rounded-lg border border-primary overflow-clip select-none"
+                className="w-full md:w-2/5 aspect-video bg-secondary rounded-lg border border-primary overflow-clip select-none blogListImage"
               >
                 {props.imageURL && (
                   <Image
@@ -68,10 +68,16 @@ const PostPreview = (props: PostMetadata) => {
                   />
                 )}
               </Link>
-              <div>
-                <p style={{ color: "#6f6f6f" }}>{props.date}</p>
-                <h2>{props.title}</h2>
-                <p>{props.subtitle}</p>
+              <div className="blogListItems">
+                <div>
+                  <p style={{ color: "#6f6f6f" }}>{props.date}</p>
+                  <h2>{props.title}</h2>
+                </div>
+                <p style={{ color: "#6f6f6f" }}>
+                  {props.subtitle.length > 80
+                    ? props.subtitle.slice(0, 80) + "..."
+                    : props.subtitle}
+                </p>
               </div>
             </li>
           </ul>
