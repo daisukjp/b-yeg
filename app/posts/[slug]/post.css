@@ -15,6 +15,13 @@
   color: #6f6f6f;
 }
 
+.nait-col {
+  color: #1d8eeb;
+}
+.nait-col:hover {
+  color: #222222;
+}
+
 @media screen and (min-width: 768px) {
   .styledh2 {
     font-size: 24px;
