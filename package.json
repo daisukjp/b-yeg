@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "env-cmd -f .env.prod next build",
+    "build:stg": "env-cmd -f .env.stg next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -17,6 +18,8 @@
     "autoprefixer": "10.4.15",
     "clsx": "^2.0.0",
     "contentful": "^10.5.2",
+    "env-cmd": "^10.1.0",
+    "ga-gtag": "^1.1.7",
     "gray-matter": "^4.0.3",
     "iconify": "^1.4.0",
     "markdown-to-jsx": "^7.3.2",
@@ -32,5 +35,8 @@
     "sharp": "^0.32.6",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/gtag.js": "^0.0.14"
   }
 }
