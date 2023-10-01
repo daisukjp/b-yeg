@@ -18,10 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head />
-      <meta
-        name="google-site-verification"
-        content="bYkwGSaKwfcCY31tXUOH3lvfNwz46pkKBoNYdwZBke0"
-      />
+
       <body
         className={inter.className}
         style={{ backgroundColor: "hsl(0, 0%, 98%)" }}
