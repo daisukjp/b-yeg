@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { useSearchParams, usePathname } from "next/navigation";
 import { Popover, Transition } from "@headlessui/react";
 import DSLOGO from "../public/images/logoyeg.png";
 import NavLink from "./navLink";
