@@ -24,8 +24,6 @@ export const generateStaticParams = async () => {
   }));
 };
 
-export async function getStaticPaths() {}
-
 export default function PostPage(props: any) {
   const slug = props.params.slug;
   const post = getPostContent(slug);
