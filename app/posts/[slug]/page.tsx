@@ -24,17 +24,28 @@ export const generateStaticParams = async () => {
   }));
 };
 
+export async function getStaticPaths() {}
+
 export default function PostPage(props: any) {
   const slug = props.params.slug;
   const post = getPostContent(slug);
+  const metaData = post.data;
 
   return (
     <>
       <Head>
-        <title>{post.data.title}</title>
-        <meta property="og:title" content={post.data.title} />
-        <meta property="og:description" content={post.data.subtitle} />
-        <meta property="og:image" content={post.data.imageURL} />
+        <title>{metaData.title}</title>
+        <meta property="og:title" content={metaData.title} />
+        <meta property="og:description" content={metaData.subtitle} />
+        <meta
+          property="og:image"
+          content={`https://www.yourdomain.com${metaData.imageURL}`}
+        />
+        <meta
+          property="og:url"
+          content={`https://www.yourdomain.com/posts/${slug}`}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header />
       <main

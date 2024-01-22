@@ -9,7 +9,7 @@ const ConnectLinks = () => {
     },
     {
       label: "Instagram",
-      href: "https://www.instagram.com/film_jp/",
+      href: "https://www.instagram.com/daisukjp/",
       icon: <FaInstagram />,
     },
   ];

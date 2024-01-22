@@ -18,7 +18,7 @@ export default function Head() {
         name="google-site-verification"
         content="bYkwGSaKwfcCY31tXUOH3lvfNwz46pkKBoNYdwZBke0"
       />
-      <link rel="icon" href="favicon.ico" />
+      <link rel="icon" href="/favicon.ico" />
     </>
   );
 }
