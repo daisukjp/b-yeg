@@ -37,11 +37,11 @@ export default function PostPage(props: any) {
         <meta property="og:description" content={metaData.subtitle} />
         <meta
           property="og:image"
-          content={`https://www.yourdomain.com${metaData.imageURL}`}
+          content={`https://www.popyeg.com${metaData.imageURL}`}
         />
         <meta
           property="og:url"
-          content={`https://www.yourdomain.com/posts/${slug}`}
+          content={`https://www.popyeg.com/posts/${slug}`}
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>

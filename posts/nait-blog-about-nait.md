@@ -3,7 +3,7 @@ title: "カナダ、アルバータ州の学校NAITについて"
 subtitle: "Northern Alberta Institute of Technology (NAIT)は私が通っていたカナダの教育機関で、エドモントンではよく知られていると思います。また、カルガリーには姉妹校的な感じで Southern Alberta Institute of Technology (SAIT)もあります。"
 date: "2023-09-30"
 cr: ["https://www.daisukjp.com/"]
-imageURL: "/images/nait-title.webp"
+imageURL: "/images/nait-title.jpg"
 ---
 
 <div class="flex flex-col gap-3 animate-in">
@@ -20,7 +20,7 @@ Northern Alberta Institute of Technology (NAIT)は私が通っていたカナダ
 </div>
 </div>
 
-![images/nait cat building](/images/nait-title.webp)
+![images/nait cat building](/images/nait-title.jpg)
 
 **教育分野は多岐にわたっており、IT、エンジニアリング、ビジネス、健康科学などの幅広い分野での知識を身につけることができます。エドモントン周辺では知名度があるそうです、実際アルバータ大学を卒業した後に実践的なスキルを身につけるために NAIT に入学した方もいました。
 **
